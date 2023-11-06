@@ -36,7 +36,6 @@ a {
 }
 
 .container {
-    width: 1260px;
     padding-left: 120px;
     padding-right: 120px;
     margin: 0 auto;
@@ -165,10 +164,19 @@ main {
 }
 
 /* -----------------recommended----------------- */
+.recommended {
+    display: flex;
+}
 .recommended__products {
     display: flex;
     gap: 24px;
     justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+    .recommended__products {
+        flex-direction: column;
+    }
 }
 
 .recommended__title, 
@@ -209,9 +217,12 @@ main {
 
 /* ---------------how to buy--------------- */
 .how-to-buy {
+    max-width: 1020px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .how-to-buy__title {
